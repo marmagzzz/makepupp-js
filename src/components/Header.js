@@ -1,8 +1,8 @@
 import React from 'react';
-import '.css/Header.css';
+import '../css/Header.css';
 
 
-class  Header extends Component {
+export default class  Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -18,4 +18,3 @@ class  Header extends Component {
     }
 }
  
-export default Header ;
