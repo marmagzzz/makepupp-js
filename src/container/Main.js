@@ -1,7 +1,9 @@
 import  React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Login from '../components/Login';
+import Login from '../container/Login';
+import Signin from '../container/Signin';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class Main extends React.Component {
     
@@ -12,11 +14,15 @@ export default class Main extends React.Component {
 
     render() { 
         return (
-            <div className = "main-div">
-                {/* <Header /> */}
-                <Login />
-                {/* <Footer /> */}
-            </div>
+            <Router>
+                
+
+                <Route path="/Header" exact component={Header} />
+                <Route path="/Login/" component={Login} />
+                <Route path="/Footer/" component={Footer} />
+                <Route path="/Signin/" component={Signin} />
+            </Router>
+
         )
     }
 }
