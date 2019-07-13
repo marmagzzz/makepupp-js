@@ -16,6 +16,7 @@ import Container from '@material-ui/core/Container';
 // css files
 import '../css/Login.css';
 
+
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -61,7 +62,7 @@ export default function SignIn() {
         }
     });
   return (
-    <section id="pupp_login" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${process.env.PUBLIC_URL + '/images/login-background.jpg'})`}}>
+    <section id="pupp_login">
         <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
@@ -82,11 +83,6 @@ export default function SignIn() {
                 name="email"
                 autoComplete="email"
                 autoFocus
-                InputProps={{
-                    classes: { 
-                        input: this.styles()
-                    }
-                }}
             />
             <TextField
                 variant="outlined"
@@ -126,9 +122,6 @@ export default function SignIn() {
             </Grid>
             </form>
         </div>
-        <Box mt={5}>
-            <MadeWithLove />
-        </Box>
         </Container>
     </section>
   );
