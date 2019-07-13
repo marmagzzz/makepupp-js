@@ -1,0 +1,9 @@
+#pupp_login .logo img{
+    width: 170px;
+    height: auto;
+}
+#pupp_login{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

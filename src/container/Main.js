@@ -13,9 +13,9 @@ export default class Main extends React.Component {
     render() { 
         return (
             <div className = "main-div">
-                <Header />
+                {/* <Header /> */}
                 <Login />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         )
     }
