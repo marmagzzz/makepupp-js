@@ -1,6 +1,7 @@
 import  React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Login from '../components/Login';
 
 export default class Main extends React.Component {
     
@@ -8,12 +9,12 @@ export default class Main extends React.Component {
     //     super(props);
     //     this.state = {  }
     // }
-    
+
     render() { 
         return (
             <div className = "main-div">
                 <Header />
-                <h1>main</h1>
+                <Login />
                 <Footer />
             </div>
         )
